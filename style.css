@@ -11,6 +11,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 body{
     background-color: var(--Eggshell);
@@ -18,8 +19,9 @@ body{
 h1{
     color: var(--Dark-Charcoal);
     font-family: "Young Serif", sans-serif;
-    font-size: 3    rem;
-
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 h2{
     font-family: "Young Serif", sans-serif;
@@ -29,14 +31,28 @@ img{
     border-radius: 20px;
     margin-bottom: 20px;
 }
+p{
+    color: var(--Wenge-Brown);
+    margin-bottom: 2rem;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 100%, 50%); }
 
 .containter{
     border-radius: 20px;
     background-color: var(--White);
-    padding: 50px;
+    padding: 40px;
     font-family: "Outfit";
-    max-width: 800px;
-    margin: 100px auto;
+    max-width: 650px;
+    margin: 80px auto;
+    
+}
+.preparation{
+    background-color: var(--Rose-White);
+    padding: 30px;
+    border-radius: 20px;
+    h3{
+        color: var(--Dark-Raspberry);
+    }
+
 }

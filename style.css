@@ -19,21 +19,61 @@ body{
 h1{
     color: var(--Dark-Charcoal);
     font-family: "Young Serif", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
 h2{
     font-family: "Young Serif", sans-serif;
+    color: var(--Nutmeg);
+    font-weight: 400;
+    margin-bottom: 1rem;
 }
 img{
     width: 100%;
     border-radius: 20px;
     margin-bottom: 20px;
 }
+li{
+    list-style-position: outside;
+    color: var(--Wenge-Brown);
+    padding: 0 .4rem;
+}
+ol{
+    list-style-position: inside;
+    padding-left: 1.5rem;
+    li{
+        padding-left: .8rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        &::marker{
+            color: var(--Nutmeg);
+            font-weight: 600;
+        }
+    }
+}
+
+    
 p{
     color: var(--Wenge-Brown);
-    margin-bottom: 2rem;
+}
+span{
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+
+}
+table{
+    width: 100%;
+}
+td{
+    padding: 1rem;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+td:nth-child(2){
+    color: var(--Nutmeg);
+    font-weight: 600;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 100%, 50%); }
@@ -47,12 +87,59 @@ p{
     margin: 80px auto;
     
 }
+.ingredients{
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--Light-Grey);
+    li::before {
+        content: '•'; /* Use a bullet point or any symbol you prefer */
+        color: var(--Nutmeg);
+        font-size: 1.5em; /* Adjust the size as needed */
+        margin-right: 1.5rem; /* Space between bullet and text */
+        display: inline-block;
+        vertical-align: middle; /* Ensure it aligns with text */
+        margin-bottom: .2rem;
+    }
+}
+.instructions{
+    border-bottom: 1px solid var(--Light-Grey);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.nutrution{
+    color: var(--Wenge-Brown);
+    p{
+        margin-bottom: 1rem;
+    }
+}
+
 .preparation{
     background-color: var(--Rose-White);
-    padding: 30px;
     border-radius: 20px;
+    margin: 2rem 0;
+    padding: 30px;
     h3{
         color: var(--Dark-Raspberry);
+        margin-bottom: .8rem;
     }
-
+    p{
+        color: var(--Wenge-Brown);
+    }
+    ul{
+        ::marker{
+            color: var(--Dark-Raspberry);
+            font-size: .8rem;
+        }
+    }
+    li::before {
+        content: '•'; /* Use a bullet point or any symbol you prefer */
+        color: var(--Dark-Raspberry);
+        font-size: 1.5em; /* Adjust the size as needed */
+        margin-right: 1.5rem; /* Space between bullet and text */
+        display: inline-block;
+        vertical-align: middle; /* Ensure it aligns with text */
+        margin-bottom: .2rem;
+    }
 }
